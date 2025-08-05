@@ -12,10 +12,205 @@ body {
 .contanir {
 
     background-color: white;
-    height: 12rem;
-    max-width: 90%;
+    height: 13rem;
+    min-width: 27rem;
+    max-width: 37%;
     margin: 0 auto;
     border-radius: 10px;
-    box-shadow: 7px 5px 20px 0px #ffffff91;
+    box-shadow: 7px 5px 20px 0px #ffffff68;
 
+}
+
+.border {
+
+    background-color: #ffffff;
+    width: 100%;
+    height: 2.5rem;
+    border-bottom: 1.3px solid #a7a7a7;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+.btn1 {
+
+    height: 100%;
+    width: 4rem;
+    border: none;
+    margin-right: 0.2rem;
+    background-color: #a4d5ff72;
+    box-shadow: 2px 4px 10px 1px #a4d5ff72;
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    direction: rtl;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.btn2 {
+
+    height: 100%;
+    border: none;
+    margin-right: 0.7rem;
+    background-color: #f0f8ff00;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    direction: rtl;
+    font-size: 15px;
+
+
+}
+
+.btn1:focus,
+.btn1:active,
+.btn2:focus,
+.btn2:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+.icon {
+    width: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.icon2 {
+    width: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.modal-title {
+
+    color: black;
+
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(0, -50px);
+    opacity: 0;
+}
+
+.modal.show .modal-dialog {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: transform 0.3s ease-out;
+}
+
+.modal-body {
+
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 20px;
+    width: 100%;
+    background: linear-gradient(309deg, #0200fb, #000000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: filter 1s;
+    font-family: monospace;
+}
+
+.modal-body:hover {
+    background: linear-gradient(160deg, #560046, #345300);
+    filter: brightness(2.5);
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+
+/* استایل اختصاصی برای کل مودال */
+.modal-content {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+
+
+
+/* تنظیمات اندازه برای همه صفحه‌ها */
+@media (max-width: 575.98px) {
+    .modal-dialog {
+        max-width: 70%;
+        margin: 1.75rem auto;
+    }
+
+    .modal-content {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .modal-body {
+        font-size: 15px;
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon2 {
+        width: 10% !important;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .modal-dialog {
+        max-width: 60%;
+        margin: 2rem auto;
+    }
+
+    .modal-content {
+        font-size: 15px;
+        padding: 13px;
+    }
+
+    .modal-body {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .icon2 {
+        width: 7% !important;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-dialog {
+        max-width: 600px;
+    }
+
+    .modal-content {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .modal-body {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .icon2 {
+        width: 15% !important;
+        margin-right: 10px;
+    }
 }
