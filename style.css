@@ -136,7 +136,7 @@ body {
 }
 
 
-/* استایل اختصاصی برای کل مودال */
+
 .modal-content {
     border-radius: 20px;
     overflow: hidden;
@@ -147,7 +147,7 @@ body {
 
 
 
-/* تنظیمات اندازه برای همه صفحه‌ها */
+
 @media (max-width: 575.98px) {
     .modal-dialog {
         max-width: 70%;
