@@ -6,18 +6,19 @@ body {
 }
 
 .divContanir {
-    margin-top: 10rem;
+    margin-top: 1rem;
 }
 
 .contanir {
 
+
     background-color: white;
-    height: 13rem;
-    min-width: 27rem;
-    max-width: 37%;
+    min-height: 13rem;
+    width: 42%;
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 7px 5px 20px 0px #ffffff68;
+
 
 }
 
@@ -39,7 +40,7 @@ body {
 .btn1 {
 
     height: 100%;
-    width: 4rem;
+    width: 3rem;
     border: none;
     margin-right: 0.2rem;
     background-color: #a4d5ff72;
@@ -51,6 +52,26 @@ body {
     cursor: pointer;
     direction: rtl;
     font-weight: bold;
+    font-size: 14px;
+
+}
+
+
+.btn1_Arz {
+
+    height: 100%;
+    width: 9rem;
+    border: none;
+    margin-right: 0.2rem;
+    background-color: #a4d5ff72;
+    /* box-shadow: 2px 4px 10px 1px #a4d5ff72; */
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    direction: rtl;
+    /* font-weight: bold; */
     font-size: 14px;
 
 }
@@ -72,7 +93,30 @@ body {
 
 }
 
+
+.btn3 {
+
+    .btn2 {
+
+        height: 100%;
+        border: none;
+        margin-right: 0.7rem;
+        background-color: #f0f8ff00;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        direction: rtl;
+        font-size: 14px;
+
+
+    }
+
+}
+
 .btn1:focus,
+.btn1_Arz:focus,
 .btn1:active,
 .btn2:focus,
 .btn2:active {
@@ -146,6 +190,109 @@ body {
 
 
 
+.divInput {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 0rem;
+    gap: 0px;
+}
+
+
+
+
+
+.in {
+    width: 40%;
+    padding: 6px 9px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #1e1e2f;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+    transform: scale(0.8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.in::placeholder {
+    color: #aaa;
+    transition: 0.3s ease;
+}
+
+.in:focus::placeholder {
+    opacity: 0;
+}
+
+.in:focus {
+    background: #2b2b40;
+    box-shadow: 0 0 15px #7f5af0;
+}
+
+
+.divButton {
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0.2rem 2rem;
+
+}
+
+.btn {
+
+    background-color: rgb(0, 0, 178);
+    color: white;
+    font-weight: bold;
+    font-family: system-ui;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 8px;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.btn:hover {
+
+    background-color: rgb(42, 42, 255);
+    color: white;
+    font-weight: bold;
+    font-family: system-ui;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 8px;
+
+}
+
+.btn:active {
+
+    transform: translateY(2px);
+
+}
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+
+    .divContanir {
+        margin-top: 8rem;
+    }
+
+    .in {
+
+        height: 3rem;
+
+    }
+
+}
 
 
 @media (max-width: 575.98px) {
@@ -216,69 +363,95 @@ body {
 }
 
 
-@media screen and (max-width: 468px) {
-    .contanir {
 
-        min-width: 20rem;
 
-    }
 
-    .btn1 {
 
-        height: 100%;
-        width: 4rem;
-        border: none;
-        margin-right: 0.2rem;
-        background-color: #a4d5ff72;
-        box-shadow: 2px 4px 10px 1px #a4d5ff72;
-        font-family: system-ui;
+@media screen and (max-width: 850px) {
+    .divInput {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        direction: rtl;
-        font-weight: bold;
-        font-size: 12px;
-
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        padding: 0 1rem;
     }
 
-    .btn2 {
+    .divInput input {
+        width: 100%;
+        max-width: 300px;
+        align-self: center;
+    }
 
-        height: 100%;
-        border: none;
-        margin-right: 0.5rem;
-        background-color: #f0f8ff00;
-        font-family: sans-serif;
+}
+
+
+@media screen and (max-width: 850px) {
+    .divInput {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        direction: rtl;
-        font-size: 12px;
-
-
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        padding: 0 1rem;
     }
 
-    .icon {
-        width: 25px;
-        margin-right: 5px;
-        vertical-align: middle;
+    .divInput input {
+        width: 100%;
+        max-width: 300px;
+        align-self: center;
     }
 }
 
 
 
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 620px) {
+
+    .divContanir {
+        margin-top: 1rem;
+    }
+
     .contanir {
-        width: 89%;
-        min-width: unset;
-        max-width: unset;
-        padding: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.8);
     }
+
+    .divInput {
+        width: 100%;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .divButton {
+        width: 100%;
+        padding: 0 1rem;
+        margin-top: 0.3rem;
+        /* فاصله از اینپوت ها */
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        width: 100%;
+        /* دکمه تمام عرض بشه */
+        max-width: 300px;
+        /* حداکثر اندازه مناسب */
+    }
+
+    .in {
+        width: 100% !important;
+        transform: scale(1);
+        /* برش گردون به اندازه واقعی */
+    }
+
+
 
     .border {
         flex-direction: column;
@@ -287,12 +460,15 @@ body {
     }
 
     .btn1,
-    .btn2 {
+    .btn2,
+    .btn1_Arz,
+    .btn3 {
         width: 100%;
         height: 3rem;
         margin: 0.3rem 0;
-        font-size: 14px;
+        font-size: 18px;
     }
+
 
     .icon {
         width: 20px;
@@ -315,4 +491,83 @@ body {
         padding: 8px;
     }
 
+}
+
+@media screen and (max-width: 565px) {
+
+    .btn {
+
+        height: 2.5rem;
+        min-width: 6rem;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 545px) {
+
+    .btn {
+
+        height: 2.5rem;
+        min-width: 5%;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 525px) {
+
+    .btn {
+
+        height: 2.4rem;
+        min-width: 5rem;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .contanir {
+        width: 95%;
+        min-width: unset;
+        margin: 0 auto;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        transform: scale(0.9);
+    }
+
+    .divInput {
+        padding: 0 1rem;
+    }
+
+    .divButton {
+        padding: 0.5rem 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .btn {
+        min-width: 100%;
+        font-size: 16px;
+    }
 }
