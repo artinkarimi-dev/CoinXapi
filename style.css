@@ -196,6 +196,7 @@ body {
     position: relative;
     justify-content: center;
     margin: 0 auto;
+    text-align: center;
 }
 
 .custom-input {
@@ -214,6 +215,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-right: 10px;
     margin-right: 0rem;
+    text-align: center;
 }
 
 .custom-input:focus {
@@ -324,6 +326,10 @@ body {
 
     }
 
+    .btn3 {
+        font-size: 13px;
+    }
+
 }
 
 
@@ -331,6 +337,10 @@ body {
 @media screen and (max-width: 1270px) {
     .input-label {
         display: none;
+    }
+
+    .btn3 {
+        font-size: 13px;
     }
 }
 
@@ -446,8 +456,8 @@ body {
 
 
 
-
 @media screen and (max-width: 620px) {
+
 
     .divContanir {
         margin-top: 1rem;
