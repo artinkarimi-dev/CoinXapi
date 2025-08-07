@@ -46,7 +46,7 @@ Through this project, the following key programming skills were strengthened:
 
 ## 📦 Project Structure
 
-<pre lang="markdown"><code> ``` BitBarg/
+<pre lang="markdown"><code> ``` CoinXapi/
 │
 ├── README.md  Project documentation
 ├── image/  Project-related images (e.g., screenshots, logos)
