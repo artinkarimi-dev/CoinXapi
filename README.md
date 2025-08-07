@@ -48,7 +48,6 @@ Through this project, the following key programming skills were strengthened:
 
 <pre lang="markdown"><code> ``` BitBarg/
 │
-├── .git/  Git version control folder
 ├── README.md  Project documentation
 ├── image/  Project-related images (e.g., screenshots, logos)
 │
