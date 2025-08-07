@@ -46,17 +46,23 @@ Through this project, the following key programming skills were strengthened:
 
 ## 📦 Project Structure
 
-BitBarg/ <br>
-
-├── index.html # Main HTML page <br>
-├── style.css # UI Styling <br>
-├── script.js # Fetches and renders prices <br>
-│  <br>
-└── proxy-server/ # Backend folder <br>
-├── server.js # Node.js proxy server <br>
-├── package.json # npm config <br>
-└── node_modules/ # Dependencies <br>
-
+<pre lang="markdown"><code> ``` BitBarg/
+│
+├── .git/ # Git version control folder
+├── README.md # Project documentation
+├── image/ # Project-related images (e.g., screenshots, logos)
+│
+├── proxy-server/ # 🔧 Backend (Node.js Proxy Server)
+│ ├── node_modules/ # Installed backend dependencies
+│ ├── package.json # Project metadata and scripts
+│ ├── package-lock.json # Exact version lock of installed packages
+│ └── server.js # Express-based proxy server (handles API requests)
+│
+└── src/ # 🎨 Frontend Source Files
+    ├── index.html # Main HTML file (entry point of the app)
+    ├── style.css # Custom styles and UI design
+    └── script.js # JavaScript logic (fetches API data, updates DOM)
+ ``` </code></pre>
 ---
 
 ## 🧭 How It Works
